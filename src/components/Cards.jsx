@@ -12,30 +12,45 @@ import Profile4 from "../assets/Profile4.svg";
 //import Avatar4 from "../assets/avatar2.svg";
 
 const LeftCard = () => (
-  <div className="bg-[#E9F3ED] rounded-2xl p-6 shadow-md">
-    {/* Header */}
-    <div className="flex items-center gap-3 mb-6">
-      <div className="w-10 h-10 bg-[#DFF3E6] rounded-full flex items-center justify-center text-green-700">
-        <img src={button1} alt="Logo" className="w-6 h-6" />
+  /* Card1 */
+  <div className="bg-[#E0F0E5] rounded-xl pt-[46px] pr-[28px] pb-[46px] pl-[28px] w-[457px] h-[665px] shadow-md">
+    {/* Content */}
+    <div className="w-[401px] h-[587px] gap-[50px]">
+      {/* Header */}
+      <div className="flex items-center gap-[24px] w-[401px] h-[62px]">
+        <div className="w-10 h-10 bg-[#DFF3E6] rounded-full flex items-center justify-center text-green-700">
+         {/* icon */}
+          <img src={button1} alt="Logo" className="w-[40] h-[40]" />
+        </div>
+        <h3 className="font-Roboto w-600 font-semibold text-[32px] leading-[40px] w-[334px] h-[62px] opacity-100 text-gray-800 leading-snug">
+          Sales overview from <br /> Previous Day
+        </h3>
       </div>
-      <h3 className="font-semibold text-lg text-gray-800 leading-snug">
-        Sales overview from <br /> Previous Day
-      </h3>
-    </div>
-
-    {/* Card Body */}
-    <div className="bg-white rounded-xl p-4">
-      <div className="flex items-center gap-2 text-sm text-gray-500">
+      {/* Chart & botoom */}
+      <div className="mt-6 relative">
+        {/* Chart*/}
+       <div className="w-[400px] h-[361px]" >
+       <div className="flex items-center gap-2 text-sm text-gray-500">
         <img src={nice} alt="Logo" className="w-6 h-6" />
-        <span>
+        <div className="absolute w-[135px] h-[87px] rounded-[12px] pt-[12px] pb-[12px] pr-4 pl-4 flex gap-2 opacity-100 top-[102px] left-[173px]">
+       <span>
           Total sales:{" "}
           <span className="font-bold text-gray-700">$12,500</span>
         </span>
-      </div>
-
-      {/* ✅ Fixed Bar Chart */}
-      <div className="mt-6 relative">
-        <div className="flex items-end justify-between h-[150px] bg-transparent">
+        </div>
+       {/* Sales report*/}
+       {/*group out*/}
+       {/* Frame*/}
+       <div className="absolute w-[135px] h-[87px] rounded-[12px] pt-[12px] pb-[12px] pr-4 pl-4 flex gap-2 opacity-100 top-[102px] left-[173px]" >
+        <div className="absolute left-[55%] -top-5 bg-[#F1F68E] absolute w-[135px] h-[87px] rounded-[12px] pt-[12px] pb-[12px] pr-4 pl-4 flex gap-2 opacity-100 top-[102px] left-[173px] text-gray-800 text-xs font-semibold px-2 py-1 rounded-md shadow-sm">
+          Highest sale ~ <span className="font-bold text-base"></span>
+        </div>
+        {/* Frame 2*/}
+        <div className="w-[103px] h-[34px] gap-[8px]">
+            <span className="font-bold text-base">$2,450</span>
+        </div>
+        </div>
+        <div className="flex items-end justify-between w-[334px] h-[232px] top-[102px] left-[33px] opacity-100 bg-transparent">
           {[
             { day: "Sun", h: 60 },
             { day: "Mon", h: 80 },
@@ -59,18 +74,16 @@ const LeftCard = () => (
             </div>
           ))}
         </div>
-
         {/* Highlight Label */}
-        <div className="absolute left-[55%] -top-5 bg-[#FBF7B9] text-gray-800 text-xs font-semibold px-2 py-1 rounded-md shadow-sm">
-          Highest sale ~ <span className="font-bold text-base">$2,450</span>
-        </div>
+        
       </div>
     </div>
-
+    </div>
     {/* Footer */}
     <div className="mt-4 bg-[#DFF3E6] inline-flex items-center gap-2 px-3 py-2 rounded-md text-sm text-gray-800 font-medium">
       <img src={nice} alt="Logo" className="w-5 h-5" />
       <span>Avg. sale: $104.16 / per transaction</span>
+    </div>
     </div>
   </div>
 );

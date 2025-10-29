@@ -14,7 +14,6 @@ const Hero = () => {
           <img src={fastIcon} alt="Fast Icon" className="w-10 h-10 inline-block" />
           Instant Cash
         </span>
-        <br />
         <span>for Businesses!</span>
       </h1>
 
