@@ -9,12 +9,12 @@ const Navbar = () => {
         <h1 className="font-bold text-lg"><span className="font-normal"></span></h1>
       </div>
       <nav className="hidden md:flex gap-6 text-sm">
-        <a href="#">Services</a>
-        <a href="#">How it works</a>
-        <a href="#">Why it's different</a>
-        <a href="#">Reviews</a>
-        <a href="#">Pricing</a>
-        <a href="#">Contact</a>
+        <a href="service">Services</a>
+        <a href="service">How it works</a>
+        <a href="service">Why it's different</a>
+        <a href="service">Reviews</a>
+        <a href="service">Pricing</a>
+        <a href="service">Contact</a>
       </nav>
       <div className="flex gap-3">
         <button className="px-4 py-2 bg-green-100 text-primary rounded-full">Sign In</button>
