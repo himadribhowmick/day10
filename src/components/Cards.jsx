@@ -1,15 +1,15 @@
-import React from "react";
+//import React from "react";
 import button1 from "../assets/button1.svg";
 import button2 from "../assets/button2.svg";
 import button3 from "../assets/button3.svg";
-import bsof from "../assets/bsof.svg";
+import nice from "../assets/nice.svg";
 import Profile1 from "../assets/Profile1.svg";
 import Profile2 from "../assets/Profile2.svg";
 import Profile3 from "../assets/Profile3.svg";
 import Profile4 from "../assets/Profile4.svg";
-import Avatar2 from "../assets/avatar2.svg";
-import Avatar3 from "../assets/avatar1.svg";
-import Avatar4 from "../assets/avatar2.svg";
+//import Avatar2 from "../assets/avatar2.svg";
+//import Avatar3 from "../assets/avatar1.svg";
+//import Avatar4 from "../assets/avatar2.svg";
 
 const LeftCard = () => (
   <div className="bg-[#E9F3ED] rounded-2xl p-6 shadow-md">
@@ -26,7 +26,7 @@ const LeftCard = () => (
     {/* Card Body */}
     <div className="bg-white rounded-xl p-4">
       <div className="flex items-center gap-2 text-sm text-gray-500">
-        <img src={bsof} alt="Logo" className="w-6 h-6" />
+        <img src={nice} alt="Logo" className="w-6 h-6" />
         <span>
           Total sales:{" "}
           <span className="font-bold text-gray-700">$12,500</span>
@@ -69,7 +69,7 @@ const LeftCard = () => (
 
     {/* Footer */}
     <div className="mt-4 bg-[#DFF3E6] inline-flex items-center gap-2 px-3 py-2 rounded-md text-sm text-gray-800 font-medium">
-      <img src={bsof} alt="Logo" className="w-5 h-5" />
+      <img src={nice} alt="Logo" className="w-5 h-5" />
       <span>Avg. sale: $104.16 / per transaction</span>
     </div>
   </div>
