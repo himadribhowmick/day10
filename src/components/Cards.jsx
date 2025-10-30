@@ -43,36 +43,24 @@ const LeftCard = () => (
        {/* Frame*/}
        <div className="absolute w-[135px] h-[87px] rounded-[12px] pt-[12px] pb-[12px] pr-4 pl-4 flex gap-2 opacity-100 top-[102px] left-[173px]" >
         <div className="absolute left-[55%] -top-5 bg-[#F1F68E] absolute w-[135px] h-[87px] rounded-[12px] pt-[12px] pb-[12px] pr-4 pl-4 flex gap-2 opacity-100 top-[102px] left-[173px] text-gray-800 text-xs font-semibold px-2 py-1 rounded-md shadow-sm">
-          Highest sale ~ <span className="font-bold text-base"></span>
+          Highest sale <span className="font-bold text-base"></span>
         </div>
         {/* Frame 2*/}
         <div className="w-[103px] h-[34px] gap-[8px]">
-            <span className="font-bold text-base">$2,450</span>
+            <span className="font-bold text-base">~ $2,450</span>
         </div>
         </div>
-        <div className="flex items-end justify-between w-[334px] h-[232px] top-[102px] left-[33px] opacity-100 bg-transparent">
-          {[
-            { day: "Sun", h: 60 },
-            { day: "Mon", h: 80 },
-            { day: "Tue", h: 90 },
-            { day: "Wed", h: 100 },
-            { day: "Thu", h: 140, high: true },
-            { day: "Fri", h: 70 },
-            { day: "Sat", h: 90 },
-          ].map((b, i) => (
-            <div
-              key={i}
-              className="flex flex-col items-center justify-end flex-1 min-w-[24px]"
-            >
-              <div
-                className={`w-4 sm:w-5 md:w-6 rounded-md transition-all duration-500 ${
-                  b.high ? "bg-green-700" : "bg-green-300"
-                }`}
-                style={{ height: `${b.h}px` }}
-              ></div>
-              <span className="text-[10px] mt-2 text-gray-500">{b.day}</span>
+        {/* Frame 130*/}
+        
+        <div className="flex items-end justify-between w-[334px] h-[179px] gap-[16px] opacity-100 bg-transparent">
+          <div className="w-[34] h-[104px] gap[12px]" >
+            <div>
+
             </div>
-          ))}
+            <div>
+              
+            </div>
+          </div>
         </div>
         {/* Highlight Label */}
         
